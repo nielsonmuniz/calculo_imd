@@ -1,6 +1,6 @@
 # calculo_imd
 
-A new Flutter application.
+Aprendendo Flutter/Dart, desenvolvimento de aplicativo de Cálculo de IMC apenas para fins de conhecimento.
 
 ## Getting Started
 
