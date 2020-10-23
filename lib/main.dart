@@ -14,6 +14,11 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+
+  TextEditingController weightController = TextEditingController();
+  TextEditingController heightController = TextEditingController();
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,6 +32,7 @@ class _HomeState extends State<Home> {
       ),
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
+        padding: EdgeInsets.fromLTRB(15.0, 0.0, 15.0, 0.0),
         child:Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
@@ -47,13 +53,16 @@ class _HomeState extends State<Home> {
               textAlign: TextAlign.center,
               style: TextStyle(color: Colors.green, fontSize: 25.0),
             ),
-            Container(
-              height: 50.0,
-              child: RaisedButton(
-                onPressed: (){},
-                child: Text("Calcular", style: TextStyle(color: Colors.white,
-                    fontSize: 25.0),),
-                color: Colors.green,
+            Padding(
+              padding: EdgeInsets.only(top: 20.0, bottom: 20.0),
+              child: Container(
+                height: 50.0,
+                child: RaisedButton(
+                  onPressed: (){},
+                  child: Text("Calcular", style: TextStyle(color: Colors.white,
+                      fontSize: 25.0),),
+                  color: Colors.green,
+                ),
               ),
             ),
             Text("Info",
