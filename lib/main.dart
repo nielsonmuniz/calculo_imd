@@ -46,7 +46,7 @@ class _HomeState extends State<Home> {
             textAlign: TextAlign.center,
             style: TextStyle(color: Colors.green, fontSize: 25.0),
           ),
-          RaisedButton(onPressed: (){},)
+          RaisedButton(onPressed: (){},),
 
         ],
       ),
